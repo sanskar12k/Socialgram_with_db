@@ -1,0 +1,488 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* .navbar-padding{
+  padding-bottom: 20px;
+} */
+body{
+  background-color: red;
+}
+.Homepage{
+  background-color: #dadee0;
+}
+.navbar .navbar-nav .nav-link:focus {
+  background-color: #34b9ce;
+  color:white;
+  border-radius: 10px;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #34b9ce;
+  color:white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .navbar img{
+    text-align: center;
+    width: 100px;
+    /* margin: auto; */
+  }
+  .links {
+  margin-left: 0;
+  padding: 20px;
+  font-size: medium;  
+  text-align: center;  
+}
+   
+   .signin, .signup{
+     box-shadow: 0 0 0 ;
+     background-color: #dadee0;
+   }
+   .signin input , .signup input , .signup select{
+     height: 35px;
+     width: 90%;
+   }
+    .home{
+      width: auto;
+      margin: auto;
+      /* top: 140px; */
+    }
+     /* textarea{
+      column-width: auto;
+    }  */
+    .posting textarea{
+      margin: 10px 5px 10px 15px;
+      width: 90%;
+    }
+    .notLogin{  top: 40%;
+      left: 1%;
+     }
+     .profilePage{
+      background-color: #fff;
+      display: flex;
+        font-size: small;
+      font-weight: 500;
+      padding: 0px 0px  0px 2px;
+    }
+    .navbar img {
+      height: 50px;
+      padding-right: 5px;}
+} 
+  
+.navbar img{
+  margin-left: 10px;
+  filter: invert(0);
+}
+.links{
+ 
+  padding: 20px;  
+  float: right;
+}
+@media screen and (min-width: 701px) {
+  .links{
+  margin-left: auto;}
+  
+  .signin, .signup{
+    box-shadow: 8px 8px 15px 2px #111;
+    background-color: #fff;
+  }
+  .signup{
+    width:30%;
+  }
+  .signin input , .signup input , .signup select{
+    height: 35px;
+    width: 80%;
+  }
+  .home{
+    width: 600px;
+    /* top: 71px; */
+  }
+  .post-content p{
+    width: 70%;
+  }
+  .posting textarea{
+    margin: 10px 5px 10px 28px;
+    width: 90%;
+  }
+  .notLogin{  top: 40%;
+    /* left: 40%; */
+  text-align: center;}
+  .profileContent{
+    width: 150%;
+      font-size: large;
+    font-weight: 500;
+    padding: 0px 2px;
+  }
+  .navbar img {
+    height: 63px;
+    padding-right: 10px;}
+
+}
+.input-box label{
+  display: inline;
+  padding-right: 5px;
+}
+.page{
+  background-color: #dadee0;
+display: flex;
+block-size: 89vh;
+justify-content: center;
+position: relative;
+}
+.signin, .signup{
+ 
+  border:  0px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  margin:  50px auto auto auto;
+}
+.signin{
+  min-width: 360px;  
+  max-width: 30%;
+}
+.signin h1 , .signup h1{
+  text-decoration: underline;
+  color: #34b9ce;
+}
+.signup{
+  margin-top: 30px;
+}
+.signup a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  color: #34b9ce;
+}
+
+@keyframes example {
+  0%   {transform: scale(1);}
+  50%   {transform: scale(.9);}
+  100% {transform: scale(1); }
+}
+.signup a:hover {
+  text-decoration: underline;
+}
+.signup button:active ,.signin button:active{
+  animation-name: example;
+  animation-duration: .5s;
+  animation-iteration-count: 3;
+}
+.signin .loginButton:hover ,.signup .signupButton:hover{
+  background-color: #34b9ce;
+}
+.signin input , .signup input , .signup select{
+ /*Positioning*/
+  padding: 5px 2px; 
+  margin: 10px 0 ;
+  /*Designing*/
+  outline: none;
+  border-top: 2px;
+  border-left: 2px;
+  border-right: 2px;
+  background-color: transparent;
+  /* Typography*/
+  color: #111;
+  font-size: large;
+}
+
+.forgot{
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+  color: #34b9ce;
+  text-align: center;
+}
+
+.forgot:hover{
+  text-decoration: underline;
+}
+.Create{
+  background-color: #ecb827d0;
+  width: 54%;
+  display: block;
+  margin: 5px auto;
+  padding: 8px 10px 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  height: 39px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.Create:hover{ background-color: #ecb827;
+  text-decoration: none;
+  color: #fff;
+}
+.signup input::placeholder{
+  color: rgb(97, 93, 93);
+}
+
+.signupform{
+  display: block;
+}
+.signup h1 {
+ float: left;
+ padding-left: 20px;
+}
+.input-submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin .loginButton , .signup .signupButton {
+  outline: none;
+  background-color: #34b9cebe;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 30%;
+  margin:10px auto; 
+  border: 1px solid #34b9ce;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+/*Not Found*/
+.notfound{
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+.notfound p{
+  font-size: large;
+  margin: 20px;
+}
+.notfound a{
+  text-decoration: none;
+  /* color: #111; */
+}
+.notfound a:hover{
+  text-decoration: underline;
+}
+.post-content{
+  border: 2px solid black;
+  margin-bottom: 10px;
+      margin-top: 10px;
+      border-radius: 20px;
+      padding-bottom: 0;
+}
+.home{
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  margin: auto;
+}
+/* .posting{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+.posting textarea{
+  outline: none;
+  border: 2px solid black;
+  border-radius: 25px;
+
+}
+.posting button, .postButton{
+  display: block;
+  width: 15%;
+    margin: auto;
+  outline: none;
+  border: 2px solid #34b9ce;
+  border-radius: 10px;
+  background-color: #34b9ced0;
+  color: #fff;
+  font-size: large;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.postButton:hover{
+  background-color: #34b9ce;
+}
+.postButton:active{
+  animation-name: example;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+.post-content{
+  margin: 20px;
+  padding: 0;
+}
+.posts{
+  width: 90%;
+  margin: 10px auto;
+}
+.posts h4{
+  display: inline;
+}
+.buttons{
+  margin-left: auto; 
+}
+.edit, .del{
+  padding-right: 5px;
+  vertical-align: baseline;
+}
+.post-content{
+  border: 2px solid black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-bottom: 0;
+
+}
+.comments{
+  margin-bottom: 10px;
+}
+.firstline h4{
+  left: 0;
+  font-weight: bold;
+}
+.firstline {
+   display: flex; 
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid black;
+  margin: auto;
+  padding: 0 10px 10px 10px;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.firstline button{
+  margin-left: auto;
+  padding: 2px; 
+  cursor: pointer;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+.del:hover ,.edit:hover{
+  filter: invert(1);
+}
+
+.post-content  a{
+ text-decoration: none;
+}
+.signupsucces{
+  top: 200px;
+  position: relative;
+}
+.signupsucces img{
+  background-color: transparent;
+  height: 80px;
+  animation-name: validated;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes validated {
+  0%{transform: scale(1); }
+  50%{transform: scale(0); }
+  100%{transform: scale(1);  }
+}
+/* .comments input , .comments button { */
+.comments{
+border: 1px solid black;
+background-color: #dadee0;
+border-radius: 2px 2px 20px 20px;
+vertical-align: baseline;
+/* display: flex; */
+padding-bottom: 0;
+margin-bottom: 0;
+}
+.comments button , .comments input{
+background-color: transparent;
+border: 1px solid transparent;
+padding-left: 5px;
+}
+/* .comments input{
+
+} */
+.comments button{
+float:right; 
+cursor: pointer;
+}
+.comments button:hover{
+filter: invert(.25);
+}
+.fa {
+font-size: 20px;
+cursor: pointer;
+user-select: none;
+float: left;
+padding-left: 10px;
+}
+
+.fa:hover {
+color: darkblue;
+}
+.details{
+top: 200px;
+position: relative;
+}
+.profilePage{
+ background-color: #dadee0;
+ height: 88vh;
+ display: flex;
+ justify-content: space-around;
+ align-items:center;
+}
+.profileContent{
+  background-color: #fff;
+  padding: 0 5px;
+}
+.rows{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.notLogin {
+  font-size: large;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  font-weight: bolder;
+margin-top: 10%;
+}
+.loading{
+  border: 5px solid black; 
+  border-radius: 150%; 
+  width: 50px;
+  margin: auto;
+  height: 50px;
+  animation-name: load;
+  animation-duration: .6s;
+  animation-iteration-count: infinite;
+  border-top-color:transparent; border-right-color:  transparent; border-bottom-color: transparent;
+}
+  @keyframes load{
+  0% {transform: rotatez(0deg);}
+  20% {transform: rotatez(72deg);}
+  40% {transform: rotatez(144deg);}
+  60% {transform: rotatez(216deg);}
+  80% {transform: rotatez(288deg);}
+  100% {transform: rotateZ(360deg);}
+ }
